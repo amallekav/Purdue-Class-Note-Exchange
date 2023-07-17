@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note Exchange Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Note Exchange</h1>
+  </header>
+
+  <main>
+    <section id="notes">
+      <h2>Notes</h2>
+      <ul>
+        {% for note in notes %}
+          <li>
+            <h3>{{ note[1] }}</h3>
+            <p>{{ note[2] }}</p>
+            <form action="/delete_note/{{ note[0] }}" method="POST">
+              <button type="submit" class="delete-btn">Delete</button>
+            </form>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section id="add-note">
+      <h2>Add Note</h2>
+      <form action="/add_note" method="POST">
+        <input type="text" name="title" placeholder="Title" required>
+        <textarea name="content" placeholder="Content" required></textarea>
+        <button type="submit">Add Note</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Note Exchange. All rights reserved.</p>
+  </footer>
+</body>
+</html>

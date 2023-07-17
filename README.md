@@ -3,63 +3,50 @@ ClassNotes Exchange: Collaborative Note Sharing for Purdue University Students
 
 Create a web platform exclusively for Purdue University students that facilitates the sharing of class notes and valuable tips among students. The platform incentivizes note-sharing by implementing a virtual currency system where students earn coins by sharing their own notes and can use these coins to access notes from other classes. Additionally, students can leave tips and recommendations for specific classes to help future students make informed decisions about their course selections.  create a decription for this project for my resume- 1 sentence
 
-Plan: 
-User Registration and Login:
 
-Created HTML templates for user registration and login forms.
-Implemented backend routes in Flask for user registration, login, and session management.
-Stored user information securely in a database.
+To provide more detailed code for the Purdue ClassNotes Exchange, we would require a significant amount of code that goes beyond the scope of a single response. However, I can provide you with a more detailed outline of the components and functionalities you may need to consider when building the platform. This outline will serve as a guide to help you structure and implement the necessary features.
 
-Note Sharing:
+1. User Registration and Login:
+- Create HTML templates for user registration and login forms.
+- Implement backend routes in Flask for user registration, login, and session management.
+- Store user information securely in a database.
 
-Developed an HTML form for users to upload and share their class notes.
-Handled file uploads and stored the notes securely in the database.
-Implemented logic to allocate virtual coins to the user for each uploaded note.
+2. Note Sharing:
+- Develop an HTML form for users to upload and share their class notes.
+- Handle file uploads and store the notes securely in the database.
+- Implement logic to allocate virtual coins to the user for each uploaded note.
 
-Note Access:
+3. Note Access:
+- Create HTML templates to display shared notes and allow users to access them.
+- Implement logic to deduct virtual coins from the user's account when accessing shared notes.
+- Provide filtering and search options to help users find relevant notes.
 
-Created HTML templates to display shared notes and allowed users to access them.
-Implemented logic to deduct virtual coins from the user's account when accessing shared notes.
-Provided filtering and search options to help users find relevant notes.
+4. Virtual Currency System:
+- Design and create a database schema to store user account details, including virtual coin balances.
+- Implement functionality to credit and deduct virtual coins based on user actions (e.g., uploading notes, accessing shared notes).
+- Display the user's virtual coin balance on their profile page.
 
-Virtual Currency System:
+5. Class Tips:
+- Develop HTML forms for users to leave tips and recommendations for specific classes.
+- Store the tips securely in the database.
+- Display the tips on the relevant class pages for future students to access.
 
-Designed and created a database schema to store user account details, including virtual coin balances.
-Implemented functionality to credit and deduct virtual coins based on user actions (e.g., uploading notes, accessing shared notes).
-Displayed the user's virtual coin balance on their profile page.
+6. Database Integration:
+- Integrate a database system (e.g., SQLite, PostgreSQL) using SQLAlchemy or Flask-SQLAlchemy.
+- Create database models for users, notes, class tips, and any other relevant entities.
+- Define relationships between different entities to establish proper data structure.
 
-Class Tips:
+7. User Profile:
+- Design an HTML template for the user profile page.
+- Display user information, including their uploaded notes, virtual coin balance, and any other relevant details.
+- Implement functionality to update user profiles, such as changing passwords or updating personal information.
 
-Developed HTML forms for users to leave tips and recommendations for specific classes.
-Stored the tips securely in the database.
-Displayed the tips on the relevant class pages for future students to access.
+8. User Authentication and Authorization:
+- Use Flask-Login or similar libraries to handle user authentication and session management.
+- Protect routes and functionalities that require user authentication.
+- Implement authorization checks to ensure users can only access and modify their own data.
 
-Database Integration:
-
-Integrated a database system (e.g., SQLite, PostgreSQL) using SQLAlchemy or Flask-SQLAlchemy.
-Created database models for users, notes, class tips, and any other relevant entities.
-Defined relationships between different entities to establish proper data structure.
-
-User Profile:
-
-Designed an HTML template for the user profile page.
-Displayed user information, including their uploaded notes, virtual coin balance, and any other relevant details.
-Implemented functionality to update user profiles, such as changing passwords or updating personal information.
-
-User Authentication and Authorization:
-
-Used Flask-Login or similar libraries to handle user authentication and session management.
-Protected routes and functionalities that required user authentication.
-Implemented authorization checks to ensure users could only access and modify their own data.
-
-Frontend Styling and Layout:
-
-Created CSS stylesheets to enhance the visual appeal of the platform.
-Designed a consistent layout and navigation structure across different pages.
-Applied responsive design principles to ensure a seamless user experience on various devices.
-
-Security Measures:
-
-Implemented user input validation to ensure data integrity and prevent malicious actions.
-Protected against SQL injection and cross-site scripting (XSS) attacks.
-Secured file uploads to prevent unauthorized access.
+9. Frontend Styling and Layout:
+- Create CSS stylesheets to enhance the visual appeal of the platform.
+- Design a consistent layout and navigation structure across different pages.
+- Apply responsive design principles to ensure a seamless user experience on various devices.

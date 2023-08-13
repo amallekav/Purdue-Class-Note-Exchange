@@ -1,11 +1,9 @@
 # Purdue-Class-Note-Exchange
 By Ankitha Mallekav
+
 ClassNotes Exchange: Collaborative Note Sharing for Purdue University Students
 
 Create a web platform exclusively for Purdue University students that facilitates the sharing of class notes and valuable tips among students. The platform incentivizes note-sharing by implementing a virtual currency system where students earn coins by sharing their own notes and can use these coins to access notes from other classes. Additionally, students can leave tips and recommendations for specific classes to help future students make informed decisions about their course selections. 
-
-
-To provide more detailed code for the Purdue ClassNotes Exchange, we would require a significant amount of code that goes beyond the scope of a single response. However, I can provide you with a more detailed outline of the components and functionalities you may need to consider when building the platform. This outline will serve as a guide to help you structure and implement the necessary features.
 
 1. User Registration and Login:
 - Create HTML templates for user registration and login forms.
